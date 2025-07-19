@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.merriweather-font{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* common style */
+main>section{
+    max-width:1240px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+:root{
+    --pry-color:#3a3a3a;
+    --secondary-color: rgba(24, 25, 31, 1.00) ;
+}
+.pry-button{
+    background-color: rgba(224, 44, 109, 1.00);
+}
+/* common style */
+/* header */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.navbar ul li{
+    list-style: none
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--pry-color);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+.logo h2{
+    font-size: 1.95rem;
+    color: var(--pry-color);
+}
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-info{
+    max-width: 582px;
+    max-height: 270px;
+}
+.banner-info h2{
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: var(--pry-color);
+    margin-bottom: -14px;
+}
+.banner-info p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.banner-info button{
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+}
+.banner-img{
+    max-width: 440px;
+    max-height: 414px;
+}
+.banner-img img{
+    width: 100%;
+}
+/* header */
+/* main */
+/* sponsor */
+.sponsor-container{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+}
+/* sponsor*/
+/* collection */
+.collection-info{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.collection-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+}
+.collection-card{
+    max-width: 329px;
+    height: 476px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+.collection-card-img{
+    max-width: 300px;
+    max-height: 256px;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+.collection-card-img img{
+    width: 100%;
+}
+.collection-card h3{
+    font-size: 1.8rem;
+    line-height: 40px;
+    color: rgba(24, 25, 31, 1.00);
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.collection-card-info{
+    font-size: 0.88rem;
+    font-weight: bold;
+    color: rgba(120, 120, 133, 1.00);
+    margin-left: 16px;
+    margin-top: 4px;
+}
+.collection-price{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.50rem;
+    line-height: 150%;
+    margin-left: 16px;
+}
+.collection-card-icon{
+    margin-left: 16px;
+}
+.collection-card-icon p{
+    display: inline;
+    margin-left: 15px;
+    font-size: 0.88rem;
+    font-weight: bold;
+    color: rgba(94, 99, 102, 1.00);
+}
+/* collection */
+/* feature */
+.feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-img{
+    max-width: 404px;
+    max-height: 270px;
+}
+.feature-img{
+    width: 100%;
+}
+.feature-info{
+    max-width: 610px;
+    max-height: 224px;
+}
+.feature-info h3{
+    font-size: 2.30rem;
+    font-weight: bold;
+    line-height: 30px;
+     color: rgba(10, 8, 38, 1.00);
+}
+.feature-info p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(108, 108, 108, 1.00);
+}
+.feature-info button{
+
+     padding: 10px;
+    border: none;
+    border-radius: 25px;
+}
+/* feature */
+/* main */
+
+
+/* responsive */
+@media screen and (max-width:576px){
+    nav,.navbar ul{
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-info{
+        text-align: center;
+    }
+    .banner-info h2{
+        font-size: 2.8rem;
+    }
+    .collection-cards , .sponsor-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+}
+@media screen and (min-width:577px) and (max-width:992px){
+     nav,.navbar ul{
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-info{
+        text-align: center;
+    }
+     .collection-cards , .sponsor-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
