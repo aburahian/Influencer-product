@@ -184,7 +184,24 @@ nav{
 }
 /* feature */
 /* main */
-
+/* footer */
+footer{
+    background-color: rgba(10, 8, 38, 1.00);
+}
+.footer{
+    max-width: 262px;
+    max-height: 134px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    color: #ffffff;
+    padding: 20px;
+}
+.footer-logo i{
+  font-size: 70px;
+  background-color: black;
+}
+/* footer */
 
 /* responsive */
 @media screen and (max-width:576px){
