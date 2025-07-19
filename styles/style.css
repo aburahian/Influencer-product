@@ -79,6 +79,7 @@ nav{
 }
 .banner-img img{
     width: 100%;
+    background-image: url(../images/Circle\ design.svg);
 }
 /* header */
 /* main */
@@ -190,10 +191,10 @@ nav{
     nav,.navbar ul{
         flex-direction: column;
     }
-    .banner-container{
+    .banner-container , .feature{
         flex-direction: column-reverse;
     }
-    .banner-info{
+    .banner-info , .feature-info{
         text-align: center;
     }
     .banner-info h2{
@@ -205,16 +206,18 @@ nav{
         align-items: center;
         gap: 30px;
     }
-    
+    .feature-img{
+        margin-top: 40px;
+    }
 }
 @media screen and (min-width:577px) and (max-width:992px){
      nav,.navbar ul{
         flex-direction: column;
     }
-    .banner-container{
+    .banner-container , .feature{
         flex-direction: column-reverse;
     }
-    .banner-info{
+    .banner-info , .feature-info{
         text-align: center;
     }
      .collection-cards , .sponsor-container{
@@ -222,5 +225,8 @@ nav{
         justify-items: center;
         align-items: center;
         gap: 30px;
+    }
+    .feature-img{
+        margin-top: 40px;
     }
 }
